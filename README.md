@@ -11,6 +11,9 @@ Los estilos están en la carpeta SASS dentro de /src
 Imágenes:
 Todas las imágenes necesarias están dentro en la carpeta "img" dentro de /src
 
+Formulario
+En formulario.html está tanto el código del formulario como el del mensaje de éxito de envío. Alguno de los dos estará comentado.
+
 Menú Móvil:
 Para activar los estilos del menú móvil solo hay que poner la clase "mobile-nav-active" a la etiqueta <nav class="nav" role="menubar"> cuando el ícono de hamburguesa ha sido clickeado. También hay que poner la clase "active" a la etiqueta <a href="" class="nav-trigger active"> que contiene el ícono de hamburguesa
 
