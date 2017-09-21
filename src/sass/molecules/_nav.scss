@@ -1,9 +1,15 @@
 .nav {
-  float: right;
-  padding: 20px 0;
+  display: block;
+  left: 0;
+  padding: 30px 30px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   ul {
+    float: right;
+    padding: 20px 10px 0 0;
     margin: 0;
-    padding: 0;
     li {
       border-left: 1px solid $white;
       display: inline;
@@ -37,18 +43,70 @@
   }
   .nav-trigger {
     display: none;
+    float: right;
+    font-size: 24px;
+    margin-right: 20px;
+    //@include transition(none);
+    &.active {
+      display: block;
+      float: none;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      .fa {
+        font-size: 36px;
+        &:before {
+          content: "\f00d";
+        }
+      }
+      &:hover, &:focus {
+        color: white;
+      }
+    }
+  }
+  &.mobile-nav-active {
+    background: rgba($magenta, 0.95);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    .logo {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      max-width: 180px;
+    }
+    ul {
+      display: block;
+      text-align: center;
+      width: 100%;
+      li {
+        border: none;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        a {
+          font-size: 18px;
+        }
+        &:last-child, &:nth-last-child(2) {
+          display: inline-block;
+          a {
+            font-size: 32px;
+          }
+        }
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .nav {
-    padding: 10px 0;
+    //padding: 10px 0;
     ul {
       display: none;
     }
     .nav-trigger {
       display: block;
-      font-size: 24px;
     }
   }
 }

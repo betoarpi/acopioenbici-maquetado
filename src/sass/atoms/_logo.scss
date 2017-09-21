@@ -8,9 +8,13 @@
 }
 
 //Responsive
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .logo {
     margin-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
     max-width: 160px;
   }
   .landing {

@@ -16,7 +16,7 @@
       //   debugger;
         var totalHeight = parseInt($(window).height());
         var heroHeight = totalHeight;
-        $('.landing-container').css('min-height',heroHeight - 304);
+        $('.landing-container').css('min-height',heroHeight);
     };
     heroHeight();
 
@@ -27,6 +27,18 @@
     };
     internalHeroHeight();
 
+    $('.nav-trigger').on('click', mobileNav);
+
+    function mobileNav() {
+      event.preventDefault();
+      $(this).toggleClass('active');
+      $('.nav').toggleClass('mobile-nav-active');
+    }
+
+    // function mobileNav() {
+    //   $('.nav-trigger')this().toggleClass('active');
+    // }
+
     /* *****************************
      * RESIZE FUNCTION
      * *****************************
@@ -35,6 +47,11 @@
         fullHeight();
         heroHeight();
         internalHeroHeight();
+
+        if ($(window).width() >= 769) {
+          $('.nav-trigger').removeClass('active');
+          $('.nav').removeClass('mobile-nav-active');
+        }
     });
   });
 })(jQuery, this);
