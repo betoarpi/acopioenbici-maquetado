@@ -1,5 +1,7 @@
 .btn {
   border-radius: 25px;
+  border: none;
+  cursor: pointer;
   display: inline-block;
   @include font-montserrat-bold;
   font-size: 18px;
@@ -15,7 +17,7 @@
     font-size: 22px;
     margin-left: 8px;
   }
-  &.btn-magenta {
+  &.btn-magenta, &.btn-send {
     background: $magenta;
     color: $white;
   }

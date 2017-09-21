@@ -54,85 +54,118 @@
 
     <main class="main-container" role="main">
         <section class="form-container">
-            <h3>¡México te necesita hoy!</h3>
-            <p>Por favor llena el formulario con tu nombre, e indica tu ubicación en el mapa.</p>
+            <!-- <h3>¡México te necesita hoy!</h3>
+            <p>Por favor llena el formulario con tu nombre, e indica tu ubicación en el mapa.</p> -->
 
-            <form action="" class="form">
+            <!-- <form action="" class="form">
                 <div class="form-row">
                     <div class="form-field">
                         <label for="">Nombre Completo <span>*</span></label>
-                        <input type="text">
-                        <i class="fa fa-user"></i>
+                        <div class="field-container">
+                            <input type="text">
+                            <i class="fa fa-user"></i>
+                        </div>
                     </div>
-                    <div class="form-field">
+                    <div class="form-field error">
                         <label for="">Correo electrónico <span>*</span></label>
-                        <input type="email">
-                        <i class="fa fa-at"></i>
+                        <div class="field-container">
+                            <input type="email">
+                            <i class="fa fa-at"></i>
+                        </div>
+                        <span class="error-message">
+                            Campo obligatorio
+                        </span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-field">
                         <label for="">Twitter <span>*</span></label>
-                        <input type="text">
-                        <i class="fa fa-twitter"></i>
+                        <div class="field-container">
+                            <input type="text">
+                            <i class="fa fa-twitter"></i>
+                        </div>
                     </div>
                     <div class="form-field">
                         <label for="">Teléfono <span>*</span></label>
-                        <input type="tel">
-                        <i class="fa fa-mobile"></i>
+                        <div class="field-container">
+                            <input type="tel">
+                            <i class="fa fa-mobile"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-field">
                         <label for="">Tamaño de Mochila <span>*</span></label>
-                        <input type="text">
-                        .form
+                        <div class="field-container">
+                            <input type="text">
+                        </div>
                     </div>
                     <div class="form-field">
                         <label for="">Ubicación exacta <span>*</span></label>
-                        <input type="text">
-                        <i class="fa fa-map-marker"></i>
+                        <div class="field-container">
+                            <input type="text">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-field">
                         <label for="">Tipo de donación<span>*</span></label>
-                        <select class="tipo-donacion" name="donacion">
-                            <option value="Selecciona una opción" selected>Selecciona una opción</option>
-                            <option value="Agua">Agua</option>
-                            <option value="Comida">Comida</option>
-                            <option value="Medicinas">Medicinas</option>
-                            <option value="Suero">Suero</option>
-                            <option value="Baterías">Baterías</option>
-                        </select>
-                        <i class="fa fa-"></i>
+                        <div class="field-container">
+                            <select class="tipo-donacion" name="donacion">
+                                <option value="Selecciona una opción" selected>Selecciona una opción</option>
+                                <option value="Agua">Agua</option>
+                                <option value="Comida">Comida</option>
+                                <option value="Medicinas">Medicinas</option>
+                                <option value="Suero">Suero</option>
+                                <option value="Baterías">Baterías</option>
+                            </select>
+                            <i class="fa fa-caret-down"></i>
+                            <i class="fa fa-caret-up"></i>
+                        </div>
                     </div>
                     <div class="form-field">
                         <label for="">Horario de disponibilidad<span>*</span></label>
-                        <input type="text" placeholder="De 7:00 am a 8:00 pm">
-                        <i class="fa fa-caret-up"></i>
-                        <i class="fa fa-caret-down"></i>
+                        <div class="field-container">
+                            <input type="text" placeholder="De 7:00 am a 8:00 pm">
+                            <i class="fa fa-clock"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-field">
                         <label for="">Palabra Secreta<span>*</span></label>
-                        <input type="text">
-                        <i class="fa fa-user-secret"></i>
+                        <div class="field-container">
+                            <input type="text">
+                            <i class="fa fa-user-secret"></i>
+                        </div>
                     </div>
                     <div class="form-field">
-                        <button type="submit" name="button">Rnviar mis datos <i class="fa fa-paper-plane"></i></button>
+                        <button type="submit" name="button" class="btn btn-send">Enviar mis datos <i class="fa fa-paper-plane"></i></button>
                     </div>
                 </div>
-            </form>
+            </form> -->
+
+            <div class="form-success">
+                <i class="fa fa-heart success"></i>
+                <h3>¡Muchísimas gracias por ayudar!</h3>
+                <p>Un miembro del staff se pondrá en contacto contigo para recoger tu donación. Si conoces gente que puede ayudar, cómparte con ellos esta iniciativa.</p>
+                <ul class="social-share">
+                    <li><a href=""><span class="fa fa-facebook-square"></span></a></li>
+                    <li><a href=""><span class="fa fa-twitter-square"></span></a></li>
+                    <li><a href=""><span class="fa fa-envelope-square"></span></a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="footer" role="footer">
-        <a href="" class="logo">
-            <img src="src/img/acopioenbici-logo-dark.svg" alt="Acopio en Bici">
-        </a>
-        <p>&copy; 2017 Acopio en Bici. <a href="#">Aviso de Privacidad</a>. Fotos por Luis Arango.</p>
+        <div class="footer-container">
+            <a href="" class="logo">
+                <img src="src/img/acopioenbici-logo-dark.svg" alt="Acopio en Bici">
+            </a>
+            <p>&copy; 2017 Acopio en Bici. <a href="#">Aviso de Privacidad</a>. Fotos por Luis Arango.</p>
+        </div>
     </footer>
     <!-- // Formulario -->
 
