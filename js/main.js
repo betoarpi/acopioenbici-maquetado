@@ -1,0 +1,1 @@
+!function(n,i,t){n(window).load(function(){function i(){var i=parseInt(n(window).height()),t=i;n(".full-height").css("min-height",t)}function t(){var i=parseInt(n(window).height()),t=i;n(".landing-container").css("min-height",t-304)}i(),t(),n(window).resize(function(){i(),t()})})}(jQuery,this);

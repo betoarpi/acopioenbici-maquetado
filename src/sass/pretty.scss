@@ -1,0 +1,30 @@
+/*
+Child theme styles
+*/
+
+//Google Fonts import
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700,900');
+
+// Theme Configuration
+@import "mixins";
+@import "variables";
+@import "core";
+
+
+// Vendor
+//@import "vendor/slick.scss";
+
+// Organisms
+@import "organisms/header";
+@import "organisms/footer";
+//@import "organisms/forms";
+
+// Molecules
+//@import "molecules/hero.scss";
+
+// Pages
+@import "pages/landing";
+//@import "pages/error404";
+
+// Templates
+//@import "templates/template.scss";
