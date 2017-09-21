@@ -20,7 +20,11 @@ Child theme styles
 //@import "organisms/forms";
 
 // Molecules
-//@import "molecules/hero.scss";
+@import "molecules/nav.scss";
+
+// Atoms
+@import "atoms/logo.scss";
+@import "atoms/buttons.scss";
 
 // Pages
 @import "pages/landing";

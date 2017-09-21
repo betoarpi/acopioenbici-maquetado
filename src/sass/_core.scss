@@ -7,7 +7,7 @@ body {
 	@include font-montserrat-light;
   line-height: 1.25;
   margin: 0;
-  > * {
+  * {
     box-sizing: border-box;
   }
 }
@@ -58,33 +58,6 @@ a {
   &:hover, &:active, &:focus {
     color: $magenta;
     outline: none;
-  }
-}
-
-.btn {
-  border-radius: 25px;
-  display: inline-block;
-  @include font-montserrat-bold;
-  font-size: 18px;
-  min-width: 220px;
-  padding: 14px 20px;
-  text-decoration: none;
-  &:hover {
-    background: $cyan !important;
-    color: white !important;
-  }
-  .fa {
-    color: inherit;
-    font-size: 22px;
-    margin-left: 8px;
-  }
-  &.btn-magenta {
-    background: $magenta;
-    color: $white;
-  }
-  &.btn-yellow {
-    background: $yellow;
-    color: $gray;
   }
 }
 

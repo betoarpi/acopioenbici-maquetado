@@ -20,6 +20,13 @@
     };
     heroHeight();
 
+    function internalHeroHeight(){
+      //   debugger;
+        var heroHeight = $('.hero').outerHeight();
+        $('.hero img').css('height',heroHeight);
+    };
+    internalHeroHeight();
+
     /* *****************************
      * RESIZE FUNCTION
      * *****************************
@@ -27,6 +34,7 @@
     $(window).resize(function () {
         fullHeight();
         heroHeight();
+        internalHeroHeight();
     });
   });
 })(jQuery, this);

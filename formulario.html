@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <!--<base href="/apps/clients/zaraya-apps/afich/app/">-->
+    <base href="/">
+    <title>Acopio en Bici</title>
+    <meta name="description" content="sitio de ayuda y donaciones para temblor CDMX 2017, acopio en bici">
+    <meta name="viewport" content="width=device-width">
+    <!--<link rel="icon" href="favicon.png" sizes="16x16" type="image/png">-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="css/required.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/pretty.css">
+
+    <!-- Nueva fuente -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900" rel="stylesheet">
+    <!-- endbuild -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Formulario -->
+    <header class="header" role="banner">
+        <figure class="hero">
+            <img src="src/img/hero-donar.jpg" alt="donar">
+            <figcaption>Foto: Luis Arango</figcaption>
+        </figure>
+        <div class="header-container">
+            <a href="" class="logo">
+                <img src="src/img/acopioenbici-logo.svg" alt="Acopio en Bici">
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li class="active"><a href="">Quiero Donar</a></li>
+                    <li><a href="">Quiero Entregar</a></li>
+                    <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                </ul>
+                <a href="" class="nav-trigger"><i class="fa fa-bars"></i></a>
+            </div>
+            <h1>Quiero Donar <i class="fa fa-heart"></i></h1>
+        </div>
+    </header>
+
+    <main class="main-container" role="main">
+        <section class="form-container">
+            <h3>¡México te necesita hoy!</h3>
+            <p>Por favor llena el formulario con tu nombre, e indica tu ubicación en el mapa.</p>
+
+            <form action="" class="form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="">Nombre Completo <span>*</span></label>
+                        <input type="text">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Correo electrónico <span>*</span></label>
+                        <input type="email">
+                        <i class="fa fa-at"></i>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="">Twitter <span>*</span></label>
+                        <input type="text">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Teléfono <span>*</span></label>
+                        <input type="tel">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="">Tamaño de Mochila <span>*</span></label>
+                        <input type="text">
+                        .form
+                    </div>
+                    <div class="form-field">
+                        <label for="">Ubicación exacta <span>*</span></label>
+                        <input type="text">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="">Tipo de donación<span>*</span></label>
+                        <select class="tipo-donacion" name="donacion">
+                            <option value="Selecciona una opción" selected>Selecciona una opción</option>
+                            <option value="Agua">Agua</option>
+                            <option value="Comida">Comida</option>
+                            <option value="Medicinas">Medicinas</option>
+                            <option value="Suero">Suero</option>
+                            <option value="Baterías">Baterías</option>
+                        </select>
+                        <i class="fa fa-"></i>
+                    </div>
+                    <div class="form-field">
+                        <label for="">Horario de disponibilidad<span>*</span></label>
+                        <input type="text" placeholder="De 7:00 am a 8:00 pm">
+                        <i class="fa fa-caret-up"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="">Palabra Secreta<span>*</span></label>
+                        <input type="text">
+                        <i class="fa fa-user-secret"></i>
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" name="button">Rnviar mis datos <i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer" role="footer">
+        <a href="" class="logo">
+            <img src="src/img/acopioenbici-logo-dark.svg" alt="Acopio en Bici">
+        </a>
+        <p>&copy; 2017 Acopio en Bici. <a href="#">Aviso de Privacidad</a>. Fotos por Luis Arango.</p>
+    </footer>
+    <!-- // Formulario -->
+
+    <div ui-view layout-fill layout="row" ng-controller="MenuCtrl" ng-cloak></div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/83870c468a.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
