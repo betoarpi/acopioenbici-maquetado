@@ -1,3 +1,7 @@
+.form-container {
+  text-align: center;
+}
+
 .form {
   float: left;
   text-align: left;
@@ -15,6 +19,9 @@
       &:last-child {
         float: right;
       }
+      &.full-field {
+        width: 100%;
+      }
       label {
         float: left;
         @include font-montserrat-bold;
@@ -22,7 +29,7 @@
         margin: 0 0 10px 0;
         width: 100%;
       }
-      input, select {
+      input, textarea, select {
         background: transparent;
         border: 1px solid $gray-soft;
         border-radius: 25px;
@@ -58,16 +65,17 @@
           font-size: 20px;
           position: absolute;
           right: 20px;
-          top: 50%;
-          @include transform(translateY(-50%));
+          top: 16px;
           z-index: -1;
         }
         &.select-container {
           .fa-caret-up {
             top: calc(50% - 5px);
+            @include transform(translateY(-50%));
           }
           .fa-caret-down {
             top: calc(50% + 5px);
+            @include transform(translateY(-50%));
           }
         }
       }
