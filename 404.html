@@ -28,23 +28,53 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Inicio landing -->
-    <div class="landing full-height">
-        <div class="landing-container">
-            <a href="" class="logo">
-                <img src="src/img/acopioenbici-logo.svg" alt="Acopio en Bici">
-            </a>
-            <div class="landing-copy">
-                <h1>¡#FuerzaMéxico, <br />estamos unidos!</h1>
-                <ul class="action-btns-container">
-                    <li><a href="" class="btn btn-yellow">Quiero donar <i class="fa fa-heart"></i></a></li>
-                    <li><a href="" class="btn btn-dark">Quiero entregar <i class="fa fa-bicycle"></i></a></li>
-                </ul>
-            </div>
-            <div class="landing-triangles"></div>
+    <!-- Formulario -->
+    <header class="header" role="banner">
+        <figure class="hero">
+            <img src="src/img/hero-donar.jpg" alt="donar">
+            <figcaption>Foto: Luis Arango</figcaption>
+        </figure>
+        <div class="header-container">
+            <h1>Error 404 <i class="fa fa-exclamation-circle"></i></h1>
         </div>
-    </div>
-    <!-- // landing -->
+    </header>
+
+    <nav class="nav" role="menubar">
+        <a href="" class="logo">
+            <img src="src/img/acopioenbici-logo.svg" alt="Acopio en Bici">
+        </a>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Quiero Donar</a></li>
+            <li><a href="">Quiero Entregar</a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+        </ul>
+        <a href="" class="nav-trigger"><i class="fa fa-bars"></i></a>
+    </nav>
+
+    <main class="main-container error404-page" role="main">
+        <section class="section-container">
+            <h2>¡Ups! Algo salió mal <i class="fa fa-frown-o"></i></h2>
+            <p>Al parecer la página que estás buscando no existe o ya no está disponible. <br /> Ni hablar. ¡Te invitamos a participar!</p>
+
+            <ul class="action-btns-container">
+                <li><a href="" class="btn btn-yellow">Quiero donar <i class="fa fa-heart"></i></a></li>
+                <li><a href="" class="btn btn-magenta">Quiero entregar <i class="fa fa-bicycle"></i></a></li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer class="footer" role="footer">
+        <div class="footer-container">
+            <a href="" class="logo">
+                <img src="src/img/acopioenbici-logo-dark.svg" alt="Acopio en Bici">
+            </a>
+            <p>&copy; 2017 Acopio en Bici. <a href="#">Aviso de Privacidad</a>. Fotos por Luis Arango.</p>
+        </div>
+    </footer>
+    <!-- // Formulario -->
 
     <div ui-view layout-fill layout="row" ng-controller="MenuCtrl" ng-cloak></div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

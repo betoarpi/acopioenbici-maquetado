@@ -17,15 +17,18 @@
       text-align: right;
       a {
         color: $white;
+        @include font-montserrat-bold;
         text-decoration: none;
+        letter-spacing: 0.4px;
+        padding-bottom: 2px;
         &:hover {
           color: $yellow;
         }
       }
       &.active {
         a {
+          border-bottom: 2px solid $yellow;
           color: $yellow;
-          text-decoration: underline;
         }
       }
       &:first-child, &:last-child, &:nth-last-child(2) {
@@ -42,6 +45,7 @@
     }
   }
   .nav-trigger {
+    color: $yellow;
     display: none;
     float: right;
     font-size: 24px;
