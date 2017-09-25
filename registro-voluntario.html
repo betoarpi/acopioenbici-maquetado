@@ -99,18 +99,30 @@
 
         <!-- Si no esta logeado -->
         <section flex layout="column" ng-show="!F.user" class="section-container center">
-            <h3>Bienvenido de nuevo <i class="fa fa-smile-o"></i></h3>
-            <p>Para iniciar sesión solo continúa con twitter</p>
+            <h3>¡Vamos a pedalear!</h3>
+            <p>Para poder inscribirte a nuestra plataforma de ayuda, por favor regístrate presionando el botón para continuar con Twitter. Si ya estás registrado, solo presiona el botón para iniciar sesión.</p>
 
-            <md-button class="btn btn-magenta" ng-click="loginWithTwitter()">
-                Continuar con Twitter
-                <i class="fa fa-twitter"></i>
-            </md-button>
+            <ul class="action-btns-container">
+                <li>
+                    <md-button class="btn btn-magenta" ng-click="loginWithTwitter()">
+                        Registrarme con Twitter
+                        <i class="fa fa-twitter"></i>
+                    </md-button>
+                </li>
+                <li>
+                    <md-button class="btn btn-yellow" ng-click="loginWithTwitter()">
+                        Iniciar sesión
+                        <i class="fa fa-sign-in"></i>
+                    </md-button>
+                </li>
+            </ul>
+
+
         </section>
 
         <!-- Si está logeado como admin -->
         <section flex layout="column" ng-show="F.user && volunteer.provider !== 'twitter'" class="section-container center">
-            <h3>¡Hola administrador!</h3>
+            <h3>¡Hola administrador! <i class="fa fa-smile-o"></i></h3>
             <p>Bienvenido de nuevo {{F.user.displayName}}. Tengo voluntarios que mostrarte.</p>
 
             <md-button ui-sref="admin.volunteers" class="btn btn-magenta">Ver voluntarios <i class="fa fa-bicycle"></i></md-button>
