@@ -68,16 +68,20 @@
                     <form name="volunteerForm" novalidate class="form">
                         <div class="form-row">
                             <div class="form-field">
-                                <md-input-container class="field-container" flex>
+                                <md-input-container flex>
                                     <label for="">Nombre Completo <span>*</span></label>
-                                    <input name="name" type="text" ng-model="volunteer.name" required />
-                                    <i class="fa fa-user"></i>
+                                    <div class="field-container">
+                                        <input name="name" type="text" ng-model="volunteer.name" required />
+                                        <i class="fa fa-user"></i>
+                                    </div>
                                 </md-input-container>
                             </div>
                             <div class="form-field">
                                 <md-input-container class="field-container" flex>
-                                    <label for="">Correo electrónico <span>*</span></label>
-                                    <input name="capacity" type="text" ng-model="volunteer.capacity" required />
+                                    <label for="">Peso y Dimension de la Donacion <span>*</span></label>
+                                    <div class="field-container">
+                                        <input name="capacity" type="text" ng-model="volunteer.capacity" placeholder="10kg - 30cm ancho, 40 largo, 60 alto" required />
+                                    </div>
                                 </md-input-container>
                             </div>
                         </div>
