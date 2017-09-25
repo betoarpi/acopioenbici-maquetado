@@ -144,8 +144,12 @@
         }
       }
       .btn-send {
-        margin-top: 34px;
         width: 100%;
+      }
+      .field-container + .field-container {
+        .btn-send {
+          margin-top: 34px;
+        }
       }
       &.error {
         input {
